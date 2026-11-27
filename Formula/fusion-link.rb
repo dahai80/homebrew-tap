@@ -1,22 +1,22 @@
 class FusionLink < Formula
   desc "Local-first connection daemon: outbound WSS to the fusion-mlx.cn cloud broker"
   homepage "https://github.com/dahai80/fusion-link"
-  version "0.1.5"
+  version "0.1.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dahai80/fusion-link/releases/download/v0.1.5/fusion-link-v0.1.5-aarch64-apple-darwin.tar.gz"
-      sha256 "731860f4be294329d875816b9a9db7cd502242fc7fc775d2a4918ea07289eb38"
+      url "https://github.com/dahai80/fusion-link/releases/download/v0.1.6/fusion-link-v0.1.6-aarch64-apple-darwin.tar.gz"
+      sha256 "5de115411aee9ed8927764adb23c08be049cb23efc7e6d04d78f4c4c78e6b857"
     else
-      url "https://github.com/dahai80/fusion-link/releases/download/v0.1.5/fusion-link-v0.1.5-x86_64-apple-darwin.tar.gz"
-      sha256 "6ef6043c2058f3e90293aa0ca9cba01b5083cdbf4823412f30fb73e51322bcaa"
+      url "https://github.com/dahai80/fusion-link/releases/download/v0.1.6/fusion-link-v0.1.6-x86_64-apple-darwin.tar.gz"
+      sha256 "fe4297530d34968e94cd263534b2ef28bf64db3b1cd9c4c4a2be76dd0f45e455"
     end
   end
 
   on_linux do
-    url "https://github.com/dahai80/fusion-link/releases/download/v0.1.5/fusion-link-v0.1.5-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "57356238784d4bab7f9267aaa7c2fbc549727be64f72631e19014e8cea7994b3"
+    url "https://github.com/dahai80/fusion-link/releases/download/v0.1.6/fusion-link-v0.1.6-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "4a4adf73e69625aed78d6be839618fbf31b7cc50b420aadc994a8d7d0ae3fa31"
   end
 
   def install
